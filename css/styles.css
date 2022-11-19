@@ -1,4 +1,4 @@
-:root{
+ :root{
 --primary-header-color: #FFFFFF;
 --second-header-color: #212121;
 --primary-subtitle-color: #757575;
@@ -20,6 +20,20 @@
 .list{
     list-style: none;
 }
+p,
+h1,
+h2,
+h3{
+    margin: 0px;
+}
+ul {
+    margin: 0px;
+    padding-left: 0px;
+}
+button {
+    cursor: pointer;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -28,6 +42,11 @@ body {
     letter-spacing: 0.03em;
     color: var(--primary-subtitle-color);
     background-color: var(--primary-background-color);
+}
+.container{
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
 }
 /* ---------header--------- */
 
@@ -88,9 +107,14 @@ span.header-logo:focus{
 
 
 /* ---------decision---------- */
-
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .decision{
     background-color: var(--second-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .decision-heading{
@@ -101,6 +125,9 @@ span.header-logo:focus{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-header-color);
+    max-width: 696px;
+    margin-bottom: 30px;
+
 }
 .btn{
     font-family: inherit;
@@ -111,6 +138,11 @@ span.header-logo:focus{
     color: var(--primary-btn-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    padding: 10px 24px;
+    
 }
 
 .btn:hover,
