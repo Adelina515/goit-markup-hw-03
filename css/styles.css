@@ -28,7 +28,7 @@ h3{
 }
 ul {
     margin: 0px;
-    padding-left: 0px;
+    padding: 0px;
 }
 button {
     cursor: pointer;
@@ -48,8 +48,20 @@ body {
     padding: 0px 15px;
     margin: 0 auto;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* ---------header--------- */
-
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border: 1px solid #ECECEC;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
 .header-logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -69,6 +81,14 @@ span.header-logo:hover,
 span.header-logo:focus{
     color: var(--accent-color);
 }
+.header-list {
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 93px;
+    margin-right: 354px;
+    
+}
 .header-link{
     font-weight: 500;
     font-size: 14px;
@@ -84,7 +104,11 @@ span.header-logo:focus{
 .header-link-active{
     color: var(--accent-color);
 }
-
+.contacts-list {
+    width: 297px;
+    display: flex;
+    justify-content: space-between;
+}
 .header-mail{
     font-weight: 500;
     font-size: 14px;
@@ -107,10 +131,7 @@ span.header-logo:focus{
 
 
 /* ---------decision---------- */
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .decision{
     background-color: var(--second-background-color);
     padding-top: 200px;
@@ -126,6 +147,7 @@ span.header-logo:focus{
     text-transform: uppercase;
     color: var(--primary-header-color);
     max-width: 696px;
+    margin: 0 auto;
     margin-bottom: 30px;
 
 }
@@ -142,6 +164,7 @@ span.header-logo:focus{
     border-radius: 4px;
     display: block;
     padding: 10px 24px;
+    margin: 0 auto;
     
 }
 
@@ -150,6 +173,9 @@ span.header-logo:focus{
     background-color: #188CE8;
 }
 /* ---------benefits---------- */
+.benefits{
+    margin: 0 auto;
+}
 
 .visually-hidden {
     position: absolute;
@@ -163,15 +189,30 @@ span.header-logo:focus{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.benefits-list{
+    display: flex;
+}
+
+.benefits-element:nth-child(-n+3){
+    margin-right: 30px;
+}
 .benefit-heading{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     color: var(--second-header-color);
+    margin-bottom: 10px;
+}
+.subtitle{
+    max-width: 270px;
 }
 
 /* ---------work---------- */
+.work{
+    padding-top: 0px;
+    margin: 0 auto;
+}
 
 .heading{
     font-weight: 700;
@@ -180,10 +221,28 @@ span.header-logo:focus{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-header-color);
+    margin-bottom: 50px;
 }
+.work-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /* ---------team---------- */
 .team{
     background-color: var(--team-background-color);
+}
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+.team-element{
+    background-color: var(--primary-background-color);
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .headline{
     font-weight: 500;
@@ -191,18 +250,28 @@ span.header-logo:focus{
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--second-header-color);
+    margin: 30px auto 10px;
+    justify-content: center;
 }
 .team-subtitle{
     font-size: 16px;
     line-height:1.2;
     letter-spacing: 0.03em;
     color: var(--primary-subtitle-color);
+    justify-content: center;
 }
 /* ---------footer---------- */
 footer{
     background-color: var(--second-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-
+.footer-address{
+    margin-top: 28px;
+}
+.footer-element:nth-child(n + 2){
+    margin-top: 12px;
+}
 .footer-logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -234,7 +303,20 @@ span.footer-logo{
 }
 
 /* ---------portfolio---------- */
+.button-container{
+    padding-right: 315px;
+    padding-left: 316px;
+    margin-bottom: 34px;
+}
 
+.button-list{
+    width: 569px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-bottom: 16px;
+}
 .portfolio-btn {
     font-family: inherit;
     font-weight: 500;
@@ -245,12 +327,41 @@ span.footer-logo{
     color: #212121;
     background-color: #F5F4FA;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
     color: var(--primary-btn-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.portfolio-element{
+    width: calc((100% - 60px ) / 3 );
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.portfolio-element:nth-child(3n) {
+    margin-right: 0px;
+}
+.portfolio-element:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+.portfolio-img{
+    display: block;
+}
+.portfolio-inform{
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    padding: 20px 24px;
 }
 
 .portfolio-heading {
@@ -259,6 +370,7 @@ span.footer-logo{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--second-header-color);
+    margin-bottom: 4px;
 }
 
 .portfolio-subtitle {
@@ -266,4 +378,5 @@ span.footer-logo{
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--primary-subtitle-color);
+    width: 322px;
 }
