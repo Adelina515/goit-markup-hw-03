@@ -84,11 +84,16 @@ span.header-logo:focus{
     margin-right: auto;
 }
 .header-list {
-    width: 281px;
     display: flex;
-    justify-content: space-between;
     
 }
+.header-element{
+    margin-right: 50px;
+}
+.header-element:nth-last-child(-n+1) {
+    margin-right: 0px;
+}
+
 .header-link{
     font-weight: 500;
     font-size: 14px;
@@ -98,6 +103,7 @@ span.header-logo:focus{
     cursor: pointer;
     padding-top: 24px;
     padding-bottom: 25px;
+    display: block;
 }
 .header-link:hover,
 .header-link:focus{
@@ -107,10 +113,12 @@ span.header-logo:focus{
     color: var(--accent-color);
 }
 .contacts-list {
-    width: 297px;
     display: flex;
-    justify-content: space-between;
 }
+.contacts-element:nth-child(1){
+    margin-right: 40px;
+}
+
 .header-mail{
     font-weight: 500;
     font-size: 14px;
@@ -227,8 +235,14 @@ span.header-logo:focus{
 }
 .work-list{
     display: flex;
-    justify-content: space-between;
 }
+.work-element{
+    margin-right: 30px;
+}
+.work-element:nth-last-child(-n+1) {
+    margin-right: 0px;
+}
+
 .work-img{
     display: block;
     width: 100%;
@@ -343,6 +357,9 @@ span.footer-logo:focus {
 }
 .button-element{
     margin-right: 8px;
+}
+.button-element:nth-last-child(-n+1) {
+    margin-right: 0px;
 }
 
 .portfolio-btn {
